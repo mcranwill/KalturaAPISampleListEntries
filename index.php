@@ -87,55 +87,53 @@
 		}
 	</script>
 <div id="boxes" style="width:20%;float:left;display:block;">
-	<table>
-		<tr><a href="#" onClick="show_hide('status_boxes');">Filter by Kaltura Entry Status:</a></tr>
-	<div id="status_boxes">
+		<p><a href="#" onClick="show_hide('status_boxes');">Filter by Kaltura Entry Status:</a></p>
+	<div style="display:block;" id="status_boxes">
 		<label for="chk-13" style="text-decoration: underline;">Un/Check All</label>
-		<tr><td><input type="checkbox" name="filterstatus[braket]" id="chk-13" value="all" onclick="checkAllPrettyCheckboxes(this, $('#boxes'));" /></td></tr>
+		<input type="checkbox" name="filterstatus[braket]" id="chk-13" value="all" onclick="checkAllPrettyCheckboxes(this, $('#boxes'));" />
 		<label for="chk-1">Blocked</label>
-		<tr><td><input type="checkbox" name="filterstatus[braket]" id="chk-1" value="6"  /></td></tr>
+		<input type="checkbox" name="filterstatus[braket]" id="chk-1" value="6"  />
 		<label for="chk-2">Deleted</label>
-		<tr><td><input type="checkbox" name="filterstatus[braket]" id="chk-2" value="3"  /></td></tr>
+		<input type="checkbox" name="filterstatus[braket]" id="chk-2" value="3"  />
 		<label for="chk-3">Error Converting</label>
-		<tr><td><input type="checkbox" name="filterstatus[braket]" id="chk-3" value="-1"  /></td></tr>
+		<input type="checkbox" name="filterstatus[braket]" id="chk-3" value="-1"  />
 		<label for="chk-4">Error Importing</label>
-		<tr><td><input type="checkbox" name="filterstatus[braket]" id="chk-4" value="-2"  /></td></tr>
+		<input type="checkbox" name="filterstatus[braket]" id="chk-4" value="-2"  />
 		<label for="chk-5">Importing</label>
-		<tr><td><input type="checkbox" name="filterstatus[braket]" id="chk-5" value="0"  /></td></tr>
+		<input type="checkbox" name="filterstatus[braket]" id="chk-5" value="0"  />
 		<label for="chk-6">In Moderation</label>
-		<tr><td><input type="checkbox" name="filterstatus[braket]" id="chk-6" value="5"  /></td></tr>
+		<input type="checkbox" name="filterstatus[braket]" id="chk-6" value="5"  />
 		<label for="chk-7">Entry Without Content</label>
-		<tr><td><input type="checkbox" name="filterstatus[braket]" id="chk-7" value="7"  /></td></tr>
+		<input type="checkbox" name="filterstatus[braket]" id="chk-7" value="7"  />
 		<label for="chk-8">Pending</label>
-		<tr><td><input type="checkbox" name="filterstatus[braket]" id="chk-8" value="4"  /></td></tr>
+		<input type="checkbox" name="filterstatus[braket]" id="chk-8" value="4"  />
 		<label for="chk-9">Waiting Conversion</label>
-		<tr><td><input type="checkbox" name="filterstatus[braket]" id="chk-9" value="1"  /></td></tr>
+		<input type="checkbox" name="filterstatus[braket]" id="chk-9" value="1"  />
 		<label for="chk-10">Ready To Play</label>
-		<tr><td><input type="checkbox" name="filterstatus[braket]" id="chk-10" value="2"  /></td></tr>
+		<input type="checkbox" name="filterstatus[braket]" id="chk-10" value="2"  />
 		<label for="chk-11">Virus Scan Failed</label>
-		<tr><td><input type="checkbox" name="filterstatus[braket]" id="chk-11" value="virusScan.ScanFailure"  /></td></tr>
+		<input type="checkbox" name="filterstatus[braket]" id="chk-11" value="virusScan.ScanFailure"  />
 		<label for="chk-12">Infected with Virus</label>
-		<tr><td><input type="checkbox" name="filterstatus[braket]" id="chk-12" value="virusScan.Infected"  /></td></tr>
+		<input type="checkbox" name="filterstatus[braket]" id="chk-12" value="virusScan.Infected"  />
 	</div>
 
-	<tr><a href="#" onClick="show_hide('media_boxes');">Filter by Media Type</a></tr>
-	<div id="media_boxes">
+	<p><a href="#" onClick="show_hide('media_boxes');">Filter by Media Type</a></p>
+	<div style="display:block;" id="media_boxes">
 		<label for="chk-14">Automatic</label>
-		<tr><td><input type="checkbox" name="filterstatus[braket]" id="chk-14" value="-1"  /></td></tr>
+		<input type="checkbox" name="filterstatus[braket]" id="chk-14" value="-1"  />
 		<label for="chk-15">Media Clip</label>
-		<tr><td><input type="checkbox" name="filterstatus[braket]" id="chk-15" value="1"  /></td></tr>
+		<input type="checkbox" name="filterstatus[braket]" id="chk-15" value="1"  />
 		<label for="chk-16">Mix</label>
-		<tr><td><input type="checkbox" name="filterstatus[braket]" id="chk-16" value="2"  /></td></tr>
+		<input type="checkbox" name="filterstatus[braket]" id="chk-16" value="2"  />
 		<label for="chk-17">Playlist</label>
-		<tr><td><input type="checkbox" name="filterstatus[braket]" id="chk-17" value="5"  /></td></tr>
+		<input type="checkbox" name="filterstatus[braket]" id="chk-17" value="5"  />
 		<label for="chk-18">Data</label>
-		<tr><td><input type="checkbox" name="filterstatus[braket]" id="chk-18" value="6"  /></td></tr>
+		<input type="checkbox" name="filterstatus[braket]" id="chk-18" value="6"  />
 		<label for="chk-19">Live Stream</label>
-		<tr><td><input type="checkbox" name="filterstatus[braket]" id="chk-19" value="7"  /></td></tr>
+		<input type="checkbox" name="filterstatus[braket]" id="chk-19" value="7"  />
 		<label for="chk-20">Document</label>
-		<tr><td><input type="checkbox" name="filterstatus[braket]" id="chk-20" value="10"  /></td></tr>
+		<input type="checkbox" name="filterstatus[braket]" id="chk-20" value="10"  />
 	</div>
-	</table>
 </div>
 	<div style="width:80%;float:left;">
 		<table cellpadding="0" cellspacing="0" border="0" class="dataTable" id="dataTable">
