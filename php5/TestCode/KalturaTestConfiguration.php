@@ -28,8 +28,8 @@
 // ===================================================================================================
 class KalturaTestConfiguration
 {
-	const PARTNER_ID = 0;
-	const SECRET = "1234";
+	const PARTNER_ID = 1018422;
+	const SECRET = "P@nter11";
 	const ADMIN_SECRET = "abcd";
 	const SERVICE_URL = "http://www.kaltura.com";
 	const UPLOAD_FILE = "DemoVideo.flv";	

@@ -1,3 +1,4 @@
+<!-- Mike Cranwill edits at 101 -->
 <?php
 	function truncateWords($input, $numwords, $padding="...")
 	{
@@ -26,8 +27,8 @@
 
   
 	require_once('php5/KalturaClient.php');
-	$adminSecret = 'your-api-admin-secret';
-	$partnerId = 000; //your partner id
+	$adminSecret = 'P@nter11';
+	$partnerId = 1018422; //your partner id
 	$userId = 'listentriestool';
 	$config = new KalturaConfiguration($partnerId);
 	$config->serviceUrl = 'http://www.kaltura.com';
@@ -98,7 +99,12 @@
 		$filter->statusIn = $_GET['statusIn'];
 		$codesample .= PHP_EOL . '$filter->statusIn = "' . $_GET['statusIn'] . '";';
 	}
-	
+	//After looking at KalturaTypes.php and KalturaEnums.php it seemed clear to use typeIn. Unsure how to implement from here.
+	// MediaType filter. see KalturaEntryStatus for list of status codes.
+	if ( isset($_GET['typeIn']) && $_GET['typeIn'] != "" ) {
+		$filter->typeIn = $_GET['typeIn'];
+		$codesample .= PHP_EOL . '$filter->typeIn = "' . $_GET['typeIn'] . '";';
+	}
 	// Execute the search (list) action
 	$filteredListResult = $client->media->listAction($filter, $pager);
 	$codesample .= PHP_EOL . '$filteredListResult = $client->media->listAction($filter, $pager);';
